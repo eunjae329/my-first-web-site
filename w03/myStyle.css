@@ -1,0 +1,50 @@
+
+a {
+    color: black;
+}
+.saw {
+    color: gray;
+}
+#active {
+    color: red;
+}
+li {
+    color: darkblue;
+}
+h1 {
+    border-bottom: 1px gray solid;
+    font-size: 45px;
+    text-align: center;
+    padding: 2%;
+    margin: 0;
+}
+h2 {
+    padding: 0px;
+    border-top: 10px;
+}
+ol {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0px;
+    padding: 20px;
+}
+
+body {
+    margin: 0px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+/* 화면 크기가 800px 보다 작다면 */
+@media(max-width: 800px){
+    #grid {
+      display: block;
+    }
+    #grid ol {
+      border-right: none;
+    }
+    h1 {
+      border-bottom: none;
+    }
+}
