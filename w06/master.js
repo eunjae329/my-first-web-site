@@ -1,9 +1,11 @@
 var Body = {
   setBackgroundColor : function(color){
-    document.querySelector('body').style.backgroundColor = color;
+    $('body').css('backgroundColor',color);
+    // document.querySelector('body').style.backgroundColor = color;
   },
   setColor : function(color){
-    document.querySelector('body').style.color = color;
+    $('body').css('color',color);
+    // document.querySelector('body').style.color = color;
   }
 }
 var Links = {

@@ -4,11 +4,21 @@
     <title>javascript</title>
 </head>
 <body>
-    <p>1+2+3+4+5+6+7+8+9+10=  
-    <script>
-        document.write(1+2+3+4+5+6+7+8+9+10);
-    </script>
-    </p>  
-</body>
+    <h1>포켓몬스터</h1>
+    <h2>스칼렛 바이올렛</h2>
+    <h3>스타팅 포켓몬</h3>
+    <ul>
+        <script>
+            const pokemons = ['나오하', '뜨아거', '꾸왁스']
+            var i = 0;
+            while (i < pokemons.length) {
+              document.write('<li><a href="https://ko.wikipedia.org/wiki/' + pokemons[i] + '">' + pokemons[i] + '</li>');
+              i = i + 1;
+            }
+        </script>
+    </ul>   
+      
+  </body>
+  
 </html>
 

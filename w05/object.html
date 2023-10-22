@@ -11,7 +11,9 @@
       club : "Tottenham Hotspur",
       showAll : function() {
         for(var key in this){
-          console.log(this[key]);
+          if (key!='showAll') {
+            console.log(this[key]);
+          }
         }
       }
     }

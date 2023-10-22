@@ -1,9 +1,11 @@
 var Body = {
   setBackgroundColor : function(color){
-    document.querySelector('body').style.backgroundColor = color;
+    $('body').css('backgroundColor',color);
+    // document.querySelector('body').style.backgroundColor = color;
   },
   setColor : function(color){
-    document.querySelector('body').style.color = color;
+    $('body').css('color',color);
+    // document.querySelector('body').style.color = color;
   }
 }
 var Links = {
@@ -26,7 +28,7 @@ function nightDayHandler(self){
     Links.setColor('darkgreen'); 
     self.value='day';
   } else {
-    Body.setBackgroundColor('mediumspringgreen');
+    Body.setBackgroundColor('mediumseagreen');
     Body.setColor('black');        
     Links.setColor('black');
     self.value='night';
